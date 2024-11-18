@@ -1,0 +1,164 @@
+body{
+   /* height: 100vh; */
+   background: rgb(70,0,156);
+background: linear-gradient(90deg, rgba(70,0,156,1) 0%, rgba(20,220,232,1) 100%);
+overflow-x: hidden;
+}
+.mein{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100vh;
+   /* background-color: aqua; */
+   /* width: 500px; */
+}
+.mein1{
+   color: aliceblue;
+   width: 550px;
+   border-radius: 10px;
+   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+   /* background-color: aqua; */
+   padding: 20px 40px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   /* align-items: center; */
+}
+.mein1 h1{
+   text-align: center;
+   font-size: 50px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.inp input{
+   background-color: rgb(208, 208, 218);
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   padding: 5px 10px;
+   border-radius: 5px;
+   font-size: 20px;
+   width: 400px;
+   height: 5vh;
+   outline: none;
+   border: none;
+}
+.inp button{
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   padding: 12px 25px;
+   outline: none;
+   border: none;
+   /* height: 5vh; */
+   font-size: 20px;
+   font-weight: bold;
+   margin-left: 10px;
+   cursor: pointer;
+   border-radius: 5px;
+   background-color: rgb(8, 129, 199);
+   color: aliceblue;
+}
+.inp input:hover{
+   background-color: aliceblue;
+   transform: 1.1;
+   transition: 1.1s;
+}
+.inp button:hover{
+   background-color: rgb(51, 78, 231);
+   transform: 1.1;
+   transition: 1.1s;
+   /* background: rgb(69,0,153);
+background: linear-gradient(90deg, rgba(69,0,153,1) 0%, rgba(0,146,154,1) 100%); */
+}
+.todos{
+   margin-top: 20px;
+   height: 20vh;
+   width: 550px;
+   overflow-y: scroll;
+   /* overflow-x: visible; */
+}
+.todos::-webkit-scrollbar{
+   width: 0px;
+}
+.todos::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+.todos::-webkit-scrollbar-thumb{
+   background-color: transparent;
+}
+.todosList{
+   padding-bottom: 20px;
+}
+.todoList p{
+   font-size: 22px;
+   font-weight: 600;
+   font-family: "Geist", sans-serif;
+   font-optical-sizing: auto;
+   /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+.todoList button{
+   padding: 5px 10px;
+   font-size: 20px;
+   cursor: pointer;
+   background-color: transparent;
+   border: none;
+   outline: none;
+   margin-bottom: 10px;
+}
+.todoList strong{
+   margin-left: 20px;
+   font-weight: bold;
+   font-family: "Geist", sans-serif;
+   font-optical-sizing: auto;
+}
+@media only screen and (max-width:650px){
+   .mein1{
+      width: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .inp input{
+      width: 375px;
+   }
+   .todos{
+      width: 500px;
+   }
+}
+@media(max-width:600px){
+   .mein1{
+      width: 450px;
+   }
+   .inp input{
+      width: 325px ;
+   }
+   .todos{
+      width: 450px;
+   }
+}
+@media(max-width:500px){
+   .mein1{
+      padding: 10px 30px;
+      width: 350px;
+   }
+   .inp input{
+      width: 225px;
+   }
+   .todos{
+      width: 350px;
+   }
+}
+@media(max-width:400px){
+   .mein1{
+      width: 300px;
+   }
+   .inp input{
+      width: 185px;
+      height: 4vh;
+   }
+   .inp button{
+      padding: 10px 20px;
+   }
+   .todos{
+      width: 300px;
+   }
+}
